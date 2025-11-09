@@ -142,6 +142,24 @@ section.visible {
   box-shadow: 0 0 20px rgba(255, 64, 64, 0.5);
 }
 
+/* TICKET INCLUDES */
+.includes {
+  text-align: left;
+  margin-top: 12px;
+  color: #ffb703;
+  font-size: 14px;
+  line-height: 1.5;
+}
+.includes li {
+  list-style: none;
+  margin: 5px 0;
+  color: #fff;
+}
+.includes li::before {
+  content: "⭐ ";
+  color: #ff4040;
+}
+
 /* MASCOTS */
 #mascot .mascot-gallery {
   display: flex;
@@ -465,16 +483,37 @@ footer {
     <div class="ticket">
       <h3>Day Pass</h3>
       <p>$153.51 — All rides, all day</p>
+      <ul class="includes">
+        <li>🎢 Unlimited ride access</li>
+        <li>🍔 1 free meal coupon</li>
+        <li>🎟 Access to daily parade</li>
+        <li>🎆 Fire Show entry</li>
+        <li>🏆 Souvenir wristband</li>
+      </ul>
       <button class="book" data-plan="Day Pass">Book Now</button>
     </div>
     <div class="ticket">
       <h3>Fast Pass</h3>
       <p>$200 — Skip the lines and get VIP entry</p>
+      <ul class="includes">
+        <li>⚡ Skip all lines</li>
+        <li>🍴 Free meals at 5 restaurants</li>
+        <li>🚀 VIP lounge access</li>
+        <li>📸 Free photo package</li>
+        <li>🎁 Exclusive Altima gift</li>
+      </ul>
       <button class="book" data-plan="Fast Pass">Book Now</button>
     </div>
     <div class="ticket">
       <h3>Family Pack</h3>
       <p>$500 — 2 Adults + 2 Kids (includes meals)</p>
+      <ul class="includes">
+        <li>👨‍👩‍👧‍👦 4 full-day passes</li>
+        <li>🍱 Free lunch & snacks</li>
+        <li>🎠 Kids’ playhouse access</li>
+        <li>🎬 4D Movie experience</li>
+        <li>📦 Free souvenir box</li>
+      </ul>
       <button class="book" data-plan="Family Pack">Book Now</button>
     </div>
   </div>
